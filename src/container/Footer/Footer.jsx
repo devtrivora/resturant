@@ -57,7 +57,7 @@ const Footer = () => (
       <div className="app__footer-links_logo">
         <h1 style={{ color: 'var(--color-golden)', fontFamily: 'var(--font-base)', fontSize: '2rem', marginBottom: '1rem' }}>Resturant</h1>
         <p className="p__opensans">&quot;The best way to find yourself is to lose yourself in the service of others.&quot;</p>
-        <img src={images.spoon} className="spoon__img" style={{ marginTop: 15 }} />
+        <img src={images.spoon} alt="" className="spoon__img" style={{ marginTop: 15 }} />
         <div className="app__footer-links_icons">
           <FiFacebook />
           <FiTwitter />
