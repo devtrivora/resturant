@@ -1,0 +1,276 @@
+.contact-section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    background-color: #050505;
+    background-image:
+        radial-gradient(circle at 50% 45%, rgba(255, 157, 46, 0.22) 0%, rgba(201, 106, 16, 0.08) 40%, rgba(5, 5, 5, 0) 70%),
+        radial-gradient(circle at 50% 20%, rgba(255, 120, 0, 0.12) 0%, rgba(5, 5, 5, 0) 60%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 5rem 6rem;
+    box-sizing: border-box;
+}
+
+/* Hero-style ambient glow behind the content */
+.contact-ambient-glow {
+    z-index: 0;
+}
+
+/* Side glow containers (left & right) */
+.contact-side-glow {
+    height: 100%;
+    z-index: 0;
+}
+
+/* ---- Content ---- */
+.contact-content {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 1400px;
+}
+
+/* ---- Eyebrow header ---- */
+.contact-eyebrow-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 1.2rem;
+}
+
+.contact-eyebrow-line {
+    width: 30px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #FF9D2E, transparent);
+}
+
+.contact-eyebrow {
+    font-family: var(--font-alt);
+    color: #FF9D2E;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+}
+
+.contact-heading {
+    font-family: var(--font-base);
+    color: #F6EBDD;
+    font-size: 56px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    margin: 0 0 1rem 0;
+    text-align: center;
+    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
+}
+
+.contact-subtitle {
+    font-family: var(--font-alt);
+    color: #E2D5C5;
+    font-size: 16px;
+    line-height: 1.7;
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 3.5rem auto;
+}
+
+/* ---- Layout: info cards + form ---- */
+.contact-layout {
+    display: flex;
+    align-items: stretch;
+    gap: 3rem;
+}
+
+/* ---- Info cards (glass style) ---- */
+.contact-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.contact-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.1rem;
+    background: rgba(15, 12, 10, 0.55);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 157, 46, 0.25);
+    border-radius: 14px;
+    padding: 1.2rem 1.4rem;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-2px);
+    border-color: rgba(255, 157, 46, 0.5);
+}
+
+.contact-card-icon {
+    flex-shrink: 0;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgba(255, 157, 46, 0.12);
+    border: 1px solid rgba(255, 157, 46, 0.4);
+    color: #FF9D2E;
+    font-size: 19px;
+}
+
+.contact-card-title {
+    font-family: var(--font-base);
+    color: #F6EBDD;
+    font-size: 19px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    margin: 0 0 0.35rem 0;
+}
+
+.contact-card-text p {
+    font-family: var(--font-alt);
+    color: #A39688;
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* ---- Contact form (glass card) ---- */
+.contact-form-card {
+    flex: 1;
+    background: rgba(15, 12, 10, 0.55);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 157, 46, 0.25);
+    border-radius: 18px;
+    padding: 2.5rem 2.5rem 2.2rem;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
+}
+
+.contact-form-title {
+    font-family: var(--font-base);
+    color: #F6EBDD;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    text-align: center;
+    margin: 0 0 2rem 0;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+}
+
+.contact-form-row {
+    display: flex;
+    gap: 1.1rem;
+}
+
+.contact-form-row input {
+    flex: 1;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    font-family: var(--font-alt);
+    font-size: 14px;
+    color: #F6EBDD;
+    background: rgba(5, 5, 5, 0.6);
+    border: 1px solid rgba(255, 157, 46, 0.25);
+    border-radius: 10px;
+    padding: 0.85rem 1.1rem;
+    outline: none;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-form textarea {
+    resize: vertical;
+    min-height: 130px;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #8a7c6d;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: rgba(255, 157, 46, 0.7);
+    box-shadow: 0 0 0 3px rgba(255, 157, 46, 0.15);
+}
+
+.contact-submit-btn {
+    font-family: var(--font-alt);
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #0A0806;
+    background: linear-gradient(135deg, #FFB347 0%, #FF8C00 100%);
+    border: none;
+    border-radius: 30px;
+    padding: 0.85rem 1.8rem;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(255, 140, 0, 0.35);
+    transition: all 0.3s ease;
+}
+
+.contact-submit-btn:hover {
+    background: linear-gradient(135deg, #FF8C00 0%, #FFA500 100%);
+    box-shadow: 0 6px 20px rgba(255, 140, 0, 0.55);
+    transform: translateY(-2px);
+}
+
+/* ---- Responsive ---- */
+@media screen and (max-width: 1024px) {
+    .contact-section {
+        padding: 4rem 3rem 6rem;
+    }
+
+    .contact-layout {
+        gap: 2.5rem;
+    }
+
+    .contact-heading {
+        font-size: 44px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contact-section {
+        padding: 4rem 2rem 6rem;
+    }
+
+    .contact-heading {
+        font-size: 34px;
+    }
+
+    .contact-subtitle {
+        font-size: 15px;
+        margin-bottom: 3rem;
+    }
+
+    .contact-layout {
+        flex-direction: column;
+    }
+
+    .contact-form-card {
+        padding: 2rem 1.5rem 1.8rem;
+    }
+
+    .contact-form-row {
+        flex-direction: column;
+    }
+}

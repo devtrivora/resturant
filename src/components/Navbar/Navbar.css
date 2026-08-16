@@ -3,59 +3,111 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: var(--color-black);
-
-    padding: 1rem 2rem;
+    background: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    padding: 1.5rem 2rem;
+    box-sizing: border-box;
 }
 
-.app__navbar-logo {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.app__navbar-logo img {
-    width: 150px;
+.beresta-logo-img {
+    height: 45px;
+    width: auto;
+    object-fit: contain;
 }
 
 .app__navbar-links {
-    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
 
     list-style: none;
+    
+    background: rgba(15, 12, 10, 0.7);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 157, 46, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 40px;
+    padding: 0.5rem 1.5rem;
+
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .app__navbar-links li {
-    margin: 0 1rem;
+    margin: 0 0.3rem;
     cursor: pointer;
 }
 
-.app__navbar-links li:hover {
-    color: var(--color-grey);
+.app__navbar-links li a {
+    color: #F6EBDD !important;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 0.5rem 1.2rem;
+    border-radius: 25px;
+    transition: 0.3s ease;
+}
+
+.app__navbar-links li:hover a {
+    color: #FF9D2E !important;
+    background: rgba(255, 157, 46, 0.15);
 }
 
 .app__navbar-login {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    
+    background: rgba(15, 12, 10, 0.7);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 157, 46, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 40px;
+    padding: 0.5rem 1rem;
 }
 
 .app__navbar-login a {
-    margin: 0 1rem;
+    margin: 0 0.3rem;
     text-decoration: none;
-    transition: .5s ease;
+    transition: .3s ease;
+    color: #F6EBDD !important;
+    font-weight: 500;
+    font-size: 15px;
+    font-family: var(--font-alt);
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
 }
 
 .app__navbar-login a:hover {
-    border-bottom: 1px solid var(--color-golden);
+    color: #FF9D2E !important;
+    background: rgba(255, 157, 46, 0.15);
 }
 
-.app__navbar-login div {
+.custom-book-btn {
+    background: linear-gradient(135deg, #FFB347 0%, #FF8C00 100%) !important;
+    color: #0A0806 !important;
+    font-weight: 600 !important;
+    box-shadow: 0 4px 15px rgba(255, 140, 0, 0.35);
+    border-radius: 25px;
+    padding: 0.5rem 1.2rem !important;
+    margin-left: 0.5rem !important;
+}
+
+.custom-book-btn:hover {
+    background: linear-gradient(135deg, #FF8C00 0%, #FFA500 100%) !important;
+    color: #050505 !important;
+    box-shadow: 0 6px 20px rgba(255, 140, 0, 0.55);
+}
+
+.app__navbar-login-divider {
     width: 1px;
-    height: 30px;
-    background: var(--color-grey);
+    height: 20px;
+    background: rgba(255, 157, 46, 0.3);
 }
 
 .app__navbar-smallscreen {
@@ -68,16 +120,18 @@
     left: 0;
     width: 100%;
     height: 100vh;
-    background: var(--color-black);
+    background: #050505;
     transition: .5s ease;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     z-index: 5;
 }
 
 .app__navbar-smallscreen_overlay .overlay__close {
     font-size: 27px;
-    color: var(--color-golden);
+    color: #FF9D2E;
     cursor: pointer;
 
     position: absolute;
@@ -92,14 +146,18 @@
 .app__navbar-smallscreen_links li {
     margin: 2rem;
     cursor: pointer;
-    color: var(--color-golden);
     font-size: 2rem;
     text-align: center;
     font-family: var(--font-base);
 }
 
-.app__navbar-smallscreen_links li:hover {
-    color: var(--color-white);
+.app__navbar-smallscreen_links li a {
+    color: #F6EBDD;
+    text-decoration: none;
+}
+
+.app__navbar-smallscreen_links li:hover a {
+    color: #FF9D2E;
 }
 
 @media screen and (min-width: 2000px) {

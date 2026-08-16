@@ -1,0 +1,1292 @@
+# Premium Restaurant Website — Full Audit & Gap Analysis
+
+## ROLE
+
+Act as a **Senior Restaurant UX/UI Designer, Creative Director, Web Architect, Conversion Optimization Specialist, and Premium Hospitality Website Reviewer**.
+
+You are auditing an already-built restaurant website.
+
+Your job is **NOT to redesign or rewrite the website immediately**.
+
+Your first responsibility is to deeply inspect the existing website/code/design and produce a detailed audit showing:
+
+1. What has already been implemented correctly.
+2. What is partially implemented.
+3. What is completely missing.
+4. What exists but needs improvement.
+5. What should be removed because it is unnecessary or weak.
+6. What should be added to make the website feel like a complete, premium, famous-restaurant website.
+7. What should be prioritized before considering the website production-ready.
+
+Do NOT assume something exists just because it is mentioned in code, comments, routes, or placeholder text. Verify that the feature/page/section is actually implemented and visually/functionally usable.
+
+---
+
+# PRIMARY OBJECTIVE
+
+Evaluate the existing website against the following target:
+
+> A modern, premium, cinematic restaurant website for a famous or high-end restaurant that feels complete, trustworthy, visually impressive, easy to navigate, conversion-focused, mobile-friendly, and production-ready.
+
+The website should successfully guide a visitor through:
+
+**DISCOVER → DESIRE → EXPLORE → TRUST → EXPERIENCE → RESERVE → VISIT**
+
+Do not judge the website only by how attractive it looks.
+
+Evaluate:
+
+* Information architecture
+* Page structure
+* Section structure
+* Visual hierarchy
+* UX
+* UI
+* Typography
+* Photography
+* Animation
+* Responsiveness
+* Accessibility
+* Performance
+* SEO
+* Conversion
+* Restaurant-specific functionality
+* Content completeness
+* Brand storytelling
+* Reservation journey
+
+---
+
+# STEP 1 — INSPECT THE ENTIRE PROJECT FIRST
+
+Before making recommendations, inspect the existing project thoroughly.
+
+Check:
+
+* All routes/pages
+* Homepage
+* Navigation
+* Footer
+* Components
+* Shared components
+* Mobile navigation
+* Desktop navigation
+* Images
+* Videos
+* Fonts
+* Icons
+* Animations
+* Buttons
+* Forms
+* Reservation flow
+* Menu
+* Contact information
+* Location/map
+* Social links
+* Responsive layouts
+* Loading states
+* Error states
+* Empty states
+* SEO metadata
+* Open Graph metadata
+* Favicon
+* Structured data
+* Accessibility implementation
+* Performance issues
+* Broken links
+* Placeholder content
+* Dummy data
+* TODOs
+* Unused components
+* Incomplete sections
+
+If possible, run the website and inspect it visually at:
+
+* Desktop
+* Laptop
+* Tablet
+* Mobile
+
+Do not rely only on source code.
+
+---
+
+# STEP 2 — CREATE A PAGE INVENTORY
+
+First identify every page currently implemented.
+
+Compare the existing pages against this target architecture:
+
+## CORE PAGES
+
+### 1. HOME
+
+### 2. MENU
+
+### 3. EXPERIENCE
+
+### 4. OUR STORY
+
+### 5. GALLERY
+
+### 6. PRIVATE DINING / EVENTS
+
+### 7. RESERVATIONS
+
+### 8. CONTACT / LOCATION
+
+## OPTIONAL PREMIUM PAGES
+
+### 9. JOURNAL / STORIES
+
+### 10. GIFT CARDS
+
+## OPTIONAL BUSINESS PAGES
+
+### 11. CAREERS
+
+### 12. PRESS / AWARDS
+
+Create a table:
+
+| Page           | Target      | Existing? | Quality | Missing Elements | Priority |
+| -------------- | ----------- | --------- | ------- | ---------------- | -------- |
+| Home           | Required    | Yes/No    | /10     | ...              | Critical |
+| Menu           | Required    | Yes/No    | /10     | ...              | Critical |
+| Experience     | Recommended | Yes/No    | /10     | ...              | High     |
+| Our Story      | Required    | Yes/No    | /10     | ...              | High     |
+| Gallery        | Recommended | Yes/No    | /10     | ...              | Medium   |
+| Private Dining | Recommended | Yes/No    | /10     | ...              | High     |
+| Reservations   | Required    | Yes/No    | /10     | ...              | Critical |
+| Contact        | Required    | Yes/No    | /10     | ...              | Critical |
+| Journal        | Optional    | Yes/No    | /10     | ...              | Low      |
+| Gift Cards     | Optional    | Yes/No    | /10     | ...              | Medium   |
+
+Do not automatically recommend creating every optional page.
+
+Decide whether each page actually makes sense for this restaurant.
+
+---
+
+# STEP 3 — HOMEPAGE SECTION AUDIT
+
+The ideal premium homepage should be evaluated against this structure:
+
+## Target Homepage Architecture
+
+### 01 — Cinematic Hero
+
+Should communicate:
+
+* Restaurant identity
+* Atmosphere
+* Cuisine/positioning
+* Strong visual
+* Primary CTA
+* Secondary CTA if appropriate
+
+Expected CTA:
+
+**Reserve a Table**
+
+Optional:
+
+**Explore Menu**
+
+---
+
+### 02 — Quick Information / Reservation Bar
+
+Should ideally expose:
+
+* Opening hours
+* Location
+* Phone/contact
+* Reservation CTA
+
+Check whether visitors can quickly understand:
+
+> Where is the restaurant?
+> When is it open?
+> How do I reserve?
+
+---
+
+### 03 — Restaurant Introduction
+
+Should communicate:
+
+* What the restaurant is
+* What makes it different
+* Short brand statement
+* Link to full story
+
+---
+
+### 04 — Signature Experience
+
+Look for experiences such as:
+
+* Dining room
+* Chef's table
+* Tasting menu
+* Bar
+* Terrace
+* Private room
+* Special dining experiences
+
+Evaluate whether the website sells the **experience**, not merely the food.
+
+---
+
+### 05 — Signature Dishes
+
+Check for:
+
+* High-quality food photography
+* 3–6 featured dishes
+* Dish names
+* Descriptions
+* Prices where appropriate
+* Link to complete menu
+
+---
+
+### 06 — Culinary Philosophy
+
+Look for:
+
+* Ingredients
+* Cooking philosophy
+* Cultural identity
+* Sustainability
+* Local sourcing
+* Seasonal thinking
+* Chef's approach
+
+Only recommend relevant items.
+
+Do not add meaningless marketing copy.
+
+---
+
+### 07 — Restaurant Atmosphere
+
+Check whether the site visually communicates:
+
+* Interior
+* Architecture
+* Lighting
+* Dining room
+* Bar
+* Terrace
+* Guest experience
+
+The visitor should be able to imagine:
+
+> "What will it feel like if I go there?"
+
+---
+
+### 08 — Chef / Founder
+
+Check whether there is:
+
+* Chef introduction
+* Portrait
+* Biography
+* Philosophy
+* Link to story
+
+If the restaurant does not have a notable chef/founder, determine whether this section should exist.
+
+---
+
+### 09 — Menu Preview
+
+Check:
+
+* Menu categories
+* Featured dishes
+* Prices
+* Readability
+* Link to complete menu
+
+Do NOT recommend using a PDF-only menu if an HTML menu would be more usable.
+
+---
+
+### 10 — Awards / Press / Recognition
+
+Check whether the restaurant has:
+
+* Michelin recognition
+* Awards
+* Press mentions
+* Publications
+* Ratings
+* Certifications
+
+Do not invent awards.
+
+If the restaurant is fictional, identify this as a content placeholder.
+
+---
+
+### 11 — Immersive Gallery
+
+Evaluate:
+
+* Food
+* Interior
+* Chef
+* People
+* Ingredients
+* Events
+* Architecture
+* Atmosphere
+
+Check whether the gallery feels intentionally art-directed rather than being a random image grid.
+
+---
+
+### 12 — Private Dining / Events
+
+Evaluate whether appropriate.
+
+Possible offerings:
+
+* Private dinner
+* Corporate events
+* Weddings
+* Celebrations
+* Chef's table
+* Venue buyout
+
+Check whether there is a clear CTA.
+
+---
+
+### 13 — Testimonials / Reviews
+
+Check:
+
+* Guest testimonials
+* Review ratings
+* Publication quotes
+* Authenticity
+* Visual presentation
+
+Never recommend fabricated testimonials.
+
+---
+
+### 14 — Location / Visit Us
+
+Must make it easy to find the restaurant.
+
+Check for:
+
+* Address
+* Opening hours
+* Phone
+* Email if appropriate
+* Map
+* Directions
+* Parking information
+* Transportation
+* Accessibility
+* Dress code
+* Reservation policy
+
+Only include information that actually applies.
+
+---
+
+### 15 — Final Reservation CTA
+
+The homepage should end with a strong action.
+
+Examples:
+
+**Reserve Your Table**
+
+**Your Table Awaits**
+
+**Join Us for Dinner**
+
+Evaluate whether the CTA feels premium and appropriate to the brand.
+
+---
+
+### 16 — Newsletter / Social
+
+Optional.
+
+Check whether appropriate for the restaurant.
+
+Possible:
+
+* Newsletter
+* Instagram
+* TikTok
+* Facebook
+* Events
+* Seasonal updates
+
+Do not add it simply to fill space.
+
+---
+
+### 17 — Footer
+
+Check:
+
+* Logo
+* Navigation
+* Address
+* Phone
+* Hours
+* Social links
+* Reservation CTA
+* Privacy
+* Terms
+* Accessibility
+* Copyright
+
+---
+
+# STEP 4 — HOMEPAGE GAP ANALYSIS
+
+Create a detailed table:
+
+| #  | Homepage Section  | Exists? | Quality /10 | Complete? | What Is Missing? | Recommended Improvement | Priority |
+| -- | ----------------- | ------: | ----------: | --------- | ---------------- | ----------------------- | -------- |
+| 01 | Hero              |         |             |           |                  |                         |          |
+| 02 | Info Bar          |         |             |           |                  |                         |          |
+| 03 | Introduction      |         |             |           |                  |                         |          |
+| 04 | Experience        |         |             |           |                  |                         |          |
+| 05 | Signature Dishes  |         |             |           |                  |                         |          |
+| 06 | Philosophy        |         |             |           |                  |                         |          |
+| 07 | Atmosphere        |         |             |           |                  |                         |          |
+| 08 | Chef              |         |             |           |                  |                         |          |
+| 09 | Menu Preview      |         |             |           |                  |                         |          |
+| 10 | Awards            |         |             |           |                  |                         |          |
+| 11 | Gallery           |         |             |           |                  |                         |          |
+| 12 | Private Dining    |         |             |           |                  |                         |          |
+| 13 | Testimonials      |         |             |           |                  |                         |          |
+| 14 | Location          |         |             |           |                  |                         |          |
+| 15 | Final CTA         |         |             |           |                  |                         |          |
+| 16 | Newsletter/Social |         |             |           |                  |                         |          |
+| 17 | Footer            |         |             |           |                  |                         |          |
+
+---
+
+# STEP 5 — NAVIGATION AUDIT
+
+Evaluate the navigation carefully.
+
+Recommended primary navigation:
+
+* Menu
+* Experience
+* Our Story
+* Gallery
+* Private Dining
+
+Primary CTA:
+
+**Reserve**
+
+Secondary links can include:
+
+* Journal
+* Gift Cards
+* Careers
+* Contact
+
+Check:
+
+### Desktop
+
+* Is navigation visually balanced?
+* Is the logo prominent?
+* Is Reserve always accessible?
+* Does the navbar become sticky when appropriate?
+* Does it remain readable over hero imagery?
+
+### Mobile
+
+* Is the hamburger/menu interaction polished?
+* Is Reserve easy to access?
+* Are links properly grouped?
+* Is the menu too long?
+* Does the navigation feel premium?
+
+---
+
+# STEP 6 — RESERVATION / CONVERSION AUDIT
+
+This is one of the highest-priority areas.
+
+Check the entire reservation journey.
+
+A visitor should be able to:
+
+**Land → Understand Restaurant → Decide → Reserve**
+
+Evaluate:
+
+* Reservation CTA in hero
+* Reservation CTA in navbar
+* Reservation CTA throughout page
+* Dedicated reservation page
+* Date selection
+* Time selection
+* Guest count
+* Confirmation
+* Error handling
+* Mobile usability
+* Loading states
+* Success state
+
+Score the reservation journey separately:
+
+**Conversion Score: /10**
+
+Identify every unnecessary step.
+
+---
+
+# STEP 7 — MENU AUDIT
+
+Evaluate:
+
+### Content
+
+* Categories
+* Dish names
+* Descriptions
+* Prices
+* Dietary information
+* Allergens where relevant
+* Seasonal menu
+* Drinks
+* Wine
+* Dessert
+
+### UX
+
+* Easy to scan?
+* Mobile friendly?
+* Search/filter needed?
+* Good typography?
+* Clear category navigation?
+* No giant wall of text?
+* No PDF dependency?
+
+Score:
+
+**Menu UX: /10**
+
+---
+
+# STEP 8 — VISUAL DESIGN AUDIT
+
+Evaluate the website as a premium hospitality brand.
+
+## Typography
+
+Check:
+
+* Font pairing
+* Font hierarchy
+* Heading scale
+* Body readability
+* Letter spacing
+* Line height
+* Navigation typography
+* Button typography
+* Editorial typography
+
+Determine whether the typography feels:
+
+* Generic
+* Good
+* Premium
+* Luxury/editorial
+* Distinctive
+
+---
+
+## Color
+
+Check:
+
+* Primary color
+* Secondary color
+* Background
+* Text
+* Accent
+* CTA
+* Contrast
+
+Ensure the palette is intentional.
+
+Do not add unnecessary colors.
+
+---
+
+## Spacing
+
+Check:
+
+* Section padding
+* Content width
+* Grid spacing
+* Text spacing
+* Image spacing
+* Mobile spacing
+
+Look for:
+
+* cramped sections
+* excessive whitespace
+* inconsistent spacing
+* inconsistent container widths
+
+---
+
+## Photography
+
+Evaluate:
+
+* Quality
+* Consistency
+* Lighting
+* Cropping
+* Image resolution
+* Restaurant authenticity
+* Food photography
+* Architecture
+* People
+* Atmosphere
+
+Identify stock/placeholder images.
+
+---
+
+# STEP 9 — PREMIUM / CINEMATIC EXPERIENCE AUDIT
+
+Evaluate:
+
+### Motion
+
+Check:
+
+* Page transitions
+* Scroll animations
+* Image reveals
+* Text reveals
+* Parallax
+* Hover effects
+* Horizontal scrolling
+* Video
+* Microinteractions
+
+But follow this rule:
+
+> Animation should enhance the restaurant experience, not distract from it.
+
+Identify:
+
+### Too little motion
+
+### Appropriate motion
+
+### Excessive motion
+
+---
+
+# STEP 10 — RESPONSIVE DESIGN AUDIT
+
+Check the website at:
+
+### Desktop
+
+1920 × 1080
+
+### Laptop
+
+1440 × 900
+
+### Tablet
+
+1024 × 1366
+
+### Mobile
+
+390 × 844
+
+### Small Mobile
+
+320 × 568
+
+Check:
+
+* Text overflow
+* Image cropping
+* Navigation
+* Buttons
+* Cards
+* Horizontal scrolling
+* Section spacing
+* Hero height
+* Video behavior
+* Typography
+* Footer
+* Forms
+* Reservation flow
+
+Create a responsive issue list.
+
+---
+
+# STEP 11 — ACCESSIBILITY AUDIT
+
+Check:
+
+* Color contrast
+* Keyboard navigation
+* Focus states
+* Alt text
+* Semantic HTML
+* Heading hierarchy
+* Button labels
+* Form labels
+* Screen-reader accessibility
+* Reduced motion
+* Touch target sizes
+* Video accessibility
+
+Identify all serious accessibility issues.
+
+---
+
+# STEP 12 — PERFORMANCE AUDIT
+
+Check:
+
+* Image optimization
+* Image formats
+* Lazy loading
+* Video optimization
+* Font loading
+* JavaScript bundle size
+* Animation performance
+* Layout shifts
+* Unnecessary dependencies
+* Large assets
+
+Pay special attention to cinematic restaurant websites because large videos and images can destroy performance.
+
+Check whether the site feels fast despite its visual richness.
+
+---
+
+# STEP 13 — SEO AUDIT
+
+Check:
+
+### Technical SEO
+
+* Page titles
+* Meta descriptions
+* Canonical URLs
+* Sitemap
+* Robots
+* Open Graph
+* Twitter/social metadata
+* Structured data
+* Heading hierarchy
+* Image alt text
+* Internal links
+
+### Restaurant SEO
+
+Check whether the site communicates:
+
+* Restaurant name
+* Cuisine
+* Location
+* Address
+* Opening hours
+* Menu
+* Reservations
+* Contact information
+
+Check for appropriate Restaurant / LocalBusiness structured data.
+
+---
+
+# STEP 14 — CONTENT AUDIT
+
+Look for:
+
+* Lorem ipsum
+* Dummy restaurant names
+* Placeholder images
+* Fake awards
+* Fake reviews
+* Placeholder prices
+* Placeholder phone numbers
+* Placeholder addresses
+* Empty sections
+* Repeated copy
+* Generic AI-generated marketing language
+* Overly long descriptions
+* Weak CTAs
+
+Categorize each issue:
+
+### REAL CONTENT
+
+### PLACEHOLDER
+
+### NEEDS REWRITE
+
+### MISSING
+
+Do not invent information.
+
+---
+
+# STEP 15 — BRAND STORY AUDIT
+
+Ask:
+
+### Can I understand what makes this restaurant different within 10 seconds?
+
+### Can I understand the restaurant's personality?
+
+### Can I understand its cuisine?
+
+### Can I understand its atmosphere?
+
+### Can I understand why it is worth visiting?
+
+### Does the website feel like a real restaurant or a generic restaurant template?
+
+Give:
+
+**Brand Identity Score: /10**
+
+Explain why.
+
+---
+
+# STEP 16 — TRUST AUDIT
+
+Evaluate whether the site creates enough confidence to make someone spend money.
+
+Look for:
+
+* Awards
+* Reviews
+* Press
+* Chef credibility
+* Restaurant history
+* Professional photography
+* Real address
+* Contact details
+* Reservation policies
+* Social proof
+* Real restaurant imagery
+
+Give:
+
+**Trust Score: /10**
+
+---
+
+# STEP 17 — MOBILE UX AUDIT
+
+Do a dedicated mobile review.
+
+Do NOT simply say:
+
+> "The site is responsive."
+
+Actually inspect the mobile experience.
+
+Evaluate:
+
+* Hero
+* Navigation
+* Typography
+* Food cards
+* Horizontal sections
+* Gallery
+* Forms
+* Reservation
+* Footer
+* Sticky CTA
+* Touch targets
+
+Give:
+
+**Mobile UX Score: /10**
+
+---
+
+# STEP 18 — COMPETITIVE / PREMIUM BENCHMARK
+
+Compare the existing website conceptually against the quality level of premium restaurant websites.
+
+Benchmark against qualities found in websites such as:
+
+* Alinea
+* Eleven Madison Park
+* Other Michelin-starred / high-end restaurant websites
+
+Do NOT copy their designs.
+
+Instead evaluate:
+
+* Storytelling
+* Navigation
+* Photography
+* Information hierarchy
+* Reservation UX
+* Editorial design
+* Brand identity
+* Experience presentation
+* Content depth
+* Visual sophistication
+
+The goal is:
+
+> Learn from the quality standard, not copy another restaurant.
+
+---
+
+# STEP 19 — SCORE THE ENTIRE WEBSITE
+
+Give the website an overall score:
+
+| Category                | Score |
+| ----------------------- | ----: |
+| Visual Design           |   /10 |
+| Brand Identity          |   /10 |
+| Homepage                |   /10 |
+| Navigation              |   /10 |
+| Menu                    |   /10 |
+| Reservation UX          |   /10 |
+| Storytelling            |   /10 |
+| Photography             |   /10 |
+| Animation               |   /10 |
+| Mobile UX               |   /10 |
+| Accessibility           |   /10 |
+| Performance             |   /10 |
+| SEO                     |   /10 |
+| Content                 |   /10 |
+| Trust / Social Proof    |   /10 |
+| Overall Professionalism |   /10 |
+
+Then calculate an overall score.
+
+---
+
+# STEP 20 — CLASSIFY ALL ISSUES BY PRIORITY
+
+Every issue must belong to one of these categories:
+
+## 🔴 P0 — CRITICAL
+
+Must fix before launch.
+
+Examples:
+
+* Broken navigation
+* Broken reservation
+* Missing contact information
+* Mobile layout broken
+* Major accessibility problem
+* Broken images
+* Missing menu
+* Missing primary CTA
+
+---
+
+## 🟠 P1 — HIGH
+
+Important for professional quality.
+
+Examples:
+
+* Weak hero
+* Poor typography
+* Missing restaurant story
+* Weak menu UX
+* Poor mobile experience
+* Missing location section
+* Weak reservation visibility
+
+---
+
+## 🟡 P2 — MEDIUM
+
+Improves polish.
+
+Examples:
+
+* Better animations
+* Better gallery
+* Improved transitions
+* Better spacing
+* Better microinteractions
+
+---
+
+## 🟢 P3 — OPTIONAL
+
+Nice-to-have.
+
+Examples:
+
+* Journal
+* Gift cards
+* Advanced effects
+* Extra storytelling sections
+* Experimental interactions
+
+---
+
+# STEP 21 — DO NOT OVERDESIGN
+
+This is extremely important.
+
+Do NOT recommend adding sections simply because the reference architecture contains them.
+
+For every missing section ask:
+
+> Does this provide meaningful value to the restaurant or visitor?
+
+If not, mark it:
+
+**Not necessary.**
+
+The objective is not to maximize the number of pages or sections.
+
+The objective is to create a website that feels:
+
+**complete + elegant + useful + premium + believable + easy to use.**
+
+---
+
+# STEP 22 — FINAL REPORT FORMAT
+
+After completing the audit, provide the final report in this exact structure:
+
+# 1. Executive Summary
+
+Give a concise assessment of the current website.
+
+Explain:
+
+* What is already strong
+* Biggest weaknesses
+* Biggest missing pieces
+* Overall impression
+
+---
+
+# 2. What We Already Have
+
+List everything successfully implemented.
+
+Group into:
+
+* Pages
+* Homepage sections
+* UI
+* Functionality
+* Visual design
+* Responsive design
+* Technical features
+
+---
+
+# 3. What Is Missing
+
+Separate into:
+
+### Missing Pages
+
+### Missing Homepage Sections
+
+### Missing Functionality
+
+### Missing Content
+
+### Missing Technical Features
+
+---
+
+# 4. What Needs Improvement
+
+For every issue provide:
+
+**Current State → Problem → Recommended Improvement → Priority**
+
+Example:
+
+> Current State: Hero exists.
+>
+> Problem: CTA is difficult to notice.
+>
+> Improvement: Increase CTA prominence and maintain a persistent reservation action.
+>
+> Priority: P1
+
+---
+
+# 5. Homepage Checklist
+
+Use:
+
+* [x] Completed
+* [~] Partially completed
+* [ ] Missing
+
+Evaluate all 17 target homepage sections.
+
+---
+
+# 6. Page Checklist
+
+Evaluate:
+
+* [ ] Home
+* [ ] Menu
+* [ ] Experience
+* [ ] Our Story
+* [ ] Gallery
+* [ ] Private Dining
+* [ ] Reservations
+* [ ] Contact
+* [ ] Journal
+* [ ] Gift Cards
+
+Mark each:
+
+**Complete / Partial / Missing / Not Needed**
+
+---
+
+# 7. Design Quality Score
+
+Provide the complete scorecard.
+
+---
+
+# 8. Critical Problems
+
+Give ONLY the most important problems that prevent the website from being considered production-ready.
+
+Maximum 10.
+
+---
+
+# 9. Recommended Improvements
+
+Separate into:
+
+### Must Fix
+
+### Should Fix
+
+### Nice to Have
+
+---
+
+# 10. Recommended Final Website Architecture
+
+Based on the actual existing website, propose the final architecture.
+
+Do not blindly use the reference architecture.
+
+Show:
+
+```text
+HOME
+├── ...
+├── ...
+└── ...
+
+MENU
+├── ...
+└── ...
+
+EXPERIENCE
+├── ...
+└── ...
+```
+
+---
+
+# 11. Final Production Readiness
+
+Give one final verdict:
+
+### NOT READY
+
+### NEEDS SIGNIFICANT WORK
+
+### NEARLY READY
+
+### PRODUCTION READY
+
+### PREMIUM / SHOWCASE READY
+
+Explain the decision.
+
+---
+
+# IMPORTANT RULES
+
+1. **Inspect before recommending.**
+2. Do not assume a feature exists.
+3. Do not recommend unnecessary sections.
+4. Do not invent restaurant information.
+5. Do not invent awards, reviews, statistics, prices, addresses, or claims.
+6. Do not redesign the site yet.
+7. First audit and report.
+8. Identify both strengths and weaknesses.
+9. Prioritize issues by business impact.
+10. Focus on the actual website, not an imaginary ideal website.
+11. Check desktop AND mobile.
+12. Check visual quality AND functionality.
+13. Check user journey AND technical implementation.
+14. Be brutally honest but constructive.
+15. If something is already excellent, explicitly say so.
+16. If something is missing but genuinely unnecessary for this restaurant, say "Not Needed" rather than recommending it.
+17. Do not confuse "more content" with "better UX."
+
+# FINAL OBJECTIVE
+
+At the end of the audit, I should be able to answer these exact questions:
+
+1. **What have we already built?**
+2. **What are we missing?**
+3. **What is currently weak?**
+4. **What should we improve?**
+5. **What should we remove?**
+6. **What should we build next?**
+7. **What is the priority order?**
+8. **Is the website actually ready to launch?**
+9. **What would stop it from looking like a premium/famous restaurant website?**
+
+Do not make changes during this audit.
+
+**Audit first. Recommendations second. Implementation only after I approve the recommendations.**

@@ -1,0 +1,14 @@
+Resturant - Project Description
+
+A responsive web application built using React.js and CSS3. Serving as a digital storefront, it showcases the restaurant's menu, chef details, and image gallery.
+
+My Role:
+Front-End Developer
+
+Skills:
+React.js, Front-End Development, Responsive Web Design, CSS, Web Application
+
+Deliverables:
+- Fully responsive front-end UI
+- Reusable React components
+- Live deployed website on GitHub Pages

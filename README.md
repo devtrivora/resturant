@@ -1,4 +1,4 @@
-# 🍽️ Olive Beach Restaurant
+# 🍽️ Resturant
 
 A modern, responsive, and beautifully designed web application for a restaurant. Built with React, this application showcases the restaurant's menu, chef details, gallery, and more.
 

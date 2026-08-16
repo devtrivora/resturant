@@ -1,44 +1,288 @@
-.app__header {
-    background-color: var(--color-black);
+.hero-background-wrapper.black-dominant-theme {
+    background-color: #050505;
+    background-image: 
+        radial-gradient(circle at 50% 45%, rgba(255, 157, 46, 0.22) 0%, rgba(201, 106, 16, 0.08) 40%, rgba(5, 5, 5, 0) 70%),
+        radial-gradient(circle at 50% 20%, rgba(255, 120, 0, 0.12) 0%, rgba(5, 5, 5, 0) 60%);
+    width: 100%;
 }
 
-.app__header-h1 {
+.scroll-sequence-section {
+    height: 600vh;
+    position: relative;
+    background-color: #050505;
+}
+
+.sticky-viewport {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    background-color: #050505;
+}
+
+/* Ambient Orange Glow behind central canvas */
+.hero-ambient-glow {
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50vw;
+    height: 45vh;
+    background: radial-gradient(circle, rgba(255, 157, 46, 0.28) 0%, rgba(201, 106, 16, 0.1) 50%, transparent 75%);
+    filter: blur(60px);
+    pointer-events: none;
+    z-index: 1;
+    transition: opacity 0.3s ease;
+}
+
+/* Side Glow Containers (Left & Right) */
+.side-glow-container {
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 25vw;
+    pointer-events: none;
+    z-index: 1;
+    transition: opacity 0.3s ease;
+}
+
+.left-side-glow {
+    left: 0;
+}
+
+.right-side-glow {
+    right: 0;
+}
+
+.side-radial-glow {
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 60%;
+    background: 
+        radial-gradient(circle, rgba(255, 179, 71, 0.25) 0%, rgba(255, 140, 0, 0.15) 35%, rgba(204, 112, 0, 0.06) 60%, transparent 80%);
+    filter: blur(40px);
+    mix-blend-mode: screen;
+}
+
+/* Star Glints (Cross-shaped Light Flares) */
+.star-glint-svg {
+    position: absolute;
+    pointer-events: none;
+    z-index: 2;
+    filter: drop-shadow(0 0 6px #FFB347) drop-shadow(0 0 12px #FF8C00);
+    animation: starPulse 3s infinite ease-in-out alternate;
+}
+
+@keyframes starPulse {
+    0% { transform: scale(0.85); opacity: 0.7; }
+    100% { transform: scale(1.15); opacity: 1; }
+}
+
+/* Floating Micro Orange Particles */
+.glow-particle {
+    position: absolute;
+    border-radius: 50%;
+    background: #FFB347;
+    box-shadow: 0 0 8px #FF8C00, 0 0 14px #FFA500;
+    pointer-events: none;
+    z-index: 2;
+    animation: particleFloat 4s infinite ease-in-out alternate;
+}
+
+@keyframes particleFloat {
+    0% { transform: translateY(0px) scale(0.9); }
+    100% { transform: translateY(-6px) scale(1.1); }
+}
+
+/* Corner Art Decorations (left.png & right.png with warm illumination) */
+.hero-corner-decoration {
+    position: absolute;
+    pointer-events: none;
+    z-index: 1;
+    transition: opacity 0.3s ease;
+    filter: drop-shadow(0 0 12px rgba(255, 140, 0, 0.45));
+}
+
+.hero-corner-left {
+    bottom: 0;
+    left: 0;
+    max-width: 190px;
+    width: 16vw;
+}
+
+.hero-corner-right {
+    bottom: 0;
+    right: 0;
+    max-width: 190px;
+    width: 16vw;
+}
+
+/* Eyebrow & Heading */
+.hero-eyebrow-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 0.5rem;
+}
+
+.hero-eyebrow-line {
+    width: 30px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #FF9D2E, transparent);
+}
+
+.hero-eyebrow {
+    font-family: var(--font-alt);
+    color: #FF9D2E;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+}
+
+.hero-heading-h1 {
     font-family: var(--font-base);
-    color: var(--color-golden);
+    color: #F6EBDD;
     font-weight: 700;
-    letter-spacing: 0.04em;
-    text-transform: capitalize;
-    line-height: 117px;
-    font-size: 90px;
+    letter-spacing: 0.03em;
+    font-size: 58px;
+    line-height: 1.15;
+    margin: 0;
+    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
 }
 
-.app__header-img img {
-    width: 80%;
+/* Description Text below image */
+.hero-description-text {
+    font-family: var(--font-alt);
+    color: #E2D5C5;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    margin: 0;
+    max-width: 700px;
+    line-height: 1.6;
 }
 
-@media screen and (min-width: 2000px) {
-    .app__header-h1 {
-        font-size: 180px;
-        line-height: 210px;
+/* Vertical Side Feature Items */
+.hero-feature-item-vertical {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: rgba(15, 12, 10, 0.55);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 157, 46, 0.25);
+    border-radius: 14px;
+    padding: 0.8rem 1.1rem;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.hero-feature-item-vertical:hover {
+    transform: translateY(-2px);
+    border-color: rgba(255, 157, 46, 0.5);
+}
+
+.hero-feature-text-block {
+    text-align: left;
+}
+
+.hero-feature-icon {
+    font-size: 26px;
+    color: #FF9D2E;
+    flex-shrink: 0;
+}
+
+.hero-feature-title {
+    font-family: var(--font-base);
+    color: #F6EBDD;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0;
+    letter-spacing: 0.02em;
+}
+
+.hero-feature-sub {
+    font-family: var(--font-alt);
+    color: #A39688;
+    font-size: 12px;
+    margin: 2px 0 0 0;
+    line-height: 1.45;
+}
+
+/* Loading Bar & Scroll Indicator */
+.hero-loading-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    background: #FF9D2E;
+    transition: width 0.3s ease;
+    z-index: 10;
+}
+
+.scroll-indicator {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgba(255, 157, 46, 0.7);
+    text-align: center;
+    font-family: var(--font-alt);
+    font-size: 11px;
+    letter-spacing: 3px;
+    animation: bounce 2s infinite;
+    z-index: 4;
+}
+
+.scroll-arrow {
+    margin-top: 4px;
+    font-size: 16px;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% { transform: translateY(0) translateX(-50%); }
+    40% { transform: translateY(-8px) translateX(-50%); }
+    60% { transform: translateY(-4px) translateX(-50%); }
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 1024px) {
+    .hero-heading-h1 {
+        font-size: 44px;
+    }
+    .hero-features-row {
+        width: 95% !important;
+    }
+    .hero-feature-sub {
+        font-size: 11px;
     }
 }
 
-@media screen and (max-width: 1150px) {
-    .app__header-h1 {
-        font-size: 90px;
+@media screen and (max-width: 768px) {
+    .hero-heading-h1 {
+        font-size: 34px;
     }
-}
-
-@media screen and (max-width: 650px) {
-    .app__header-h1 {
-        font-size: 70px;
-        line-height: 87px;
+    .hero-features-row {
+        flex-wrap: wrap;
+        gap: 15px;
+        bottom: 10px !important;
     }
-}
-
-@media screen and (max-width: 450px) {
-    .app__header-h1 {
-        font-size: 50px;
-        line-height: 70px;
+    .hero-feature-divider {
+        display: none;
+    }
+    .hero-feature-item {
+        flex: 1 1 40%;
+    }
+    .hero-description-text {
+        font-size: 14px;
+    }
+    .hero-corner-decoration {
+        max-width: 180px;
     }
 }
