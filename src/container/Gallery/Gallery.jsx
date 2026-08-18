@@ -121,13 +121,13 @@ const Gallery = () => {
         {/* ---- Hero ---- */}
         <div className="gallery-hero">
           <div className="gallery-hero-image">
-            <img src={topImg} alt="Beresta restaurant interior" />
+            <img src={topImg} alt="Beresta restaurant interior" loading="lazy" />
             <div className="gallery-hero-overlay" />
           </div>
-          <img src={leftCornerImg} alt="" className="gallery-hero-ornament" />
+          <img src={leftCornerImg} alt="" className="gallery-hero-ornament" loading="lazy" />
 
           <div className="gallery-hero-left">
-            <img src={d3Img} alt="Beresta dish" className="gallery-hero-d1" />
+            <img src={d3Img} alt="Beresta dish" className="gallery-hero-d1" loading="lazy" />
             <div className="gallery-hero-text">
               <div className="gallery-eyebrow-container">
                 <span className="gallery-eyebrow-line" />
@@ -152,13 +152,13 @@ const Gallery = () => {
 
         {/* ---- Story statement banner ---- */}
         <div className="gallery-story-banner">
-          <img src={leftCornerImg} alt="" className="gallery-banner-ornament gallery-banner-orn-left" />
+          <img src={leftCornerImg} alt="" className="gallery-banner-ornament gallery-banner-orn-left" loading="lazy" />
           <GiOldLantern className="gallery-lantern-icon" />
           <div className="gallery-banner-text">
             <h2 className="gallery-banner-title">Every Moment Tells Our Story</h2>
             <p className="gallery-banner-desc">Discover the heart of Beresta through every frame.</p>
           </div>
-          <img src={rightCornerImg} alt="" className="gallery-banner-ornament gallery-banner-orn-right" />
+          <img src={rightCornerImg} alt="" className="gallery-banner-ornament gallery-banner-orn-right" loading="lazy" />
         </div>
 
         {/* ---- Category filters ---- */}
@@ -182,9 +182,9 @@ const Gallery = () => {
         {filteredItems.length > 0 ? (
           <div className="gallery-grid-wrap">
             <div className="gallery-side-column gallery-side-left">
-              <img src={d1Img} alt="" className="gallery-side-panel" />
-              <img src={d1Img} alt="" className="gallery-side-panel" />
-              <img src={d1Img} alt="" className="gallery-side-panel" />
+              <img src={d1Img} alt="" className="gallery-side-panel" loading="lazy" />
+              <img src={d1Img} alt="" className="gallery-side-panel" loading="lazy" />
+              <img src={d1Img} alt="" className="gallery-side-panel" loading="lazy" />
             </div>
             <div className="gallery-grid" key={activeFilter}>
               {filteredItems.map((item, index) => (
@@ -201,9 +201,9 @@ const Gallery = () => {
               ))}
             </div>
             <div className="gallery-side-column gallery-side-right">
-              <img src={d2Img} alt="" className="gallery-side-panel" />
-              <img src={d2Img} alt="" className="gallery-side-panel" />
-              <img src={d2Img} alt="" className="gallery-side-panel" />
+              <img src={d2Img} alt="" className="gallery-side-panel" loading="lazy" />
+              <img src={d2Img} alt="" className="gallery-side-panel" loading="lazy" />
+              <img src={d2Img} alt="" className="gallery-side-panel" loading="lazy" />
             </div>
           </div>
         ) : (

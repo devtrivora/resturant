@@ -1,22 +1,26 @@
-import React from 'react';
+import React, { useRef, useState } from 'react';
 import { BsFillPlayFill, BsPauseFill } from 'react-icons/bs';
 
-import { meal } from '../../constants';
 import './Intro.css';
 
+// meal.mp4 is ~4 MB (already optimized by developer).
+// preload="none" ensures the browser does NOT download the video
+// until the user actually clicks play — saving ~4 MB on every page load.
 const Intro = () => {
-  const [playVideo, setPlayVideo] = React.useState(false);
-  const vidRef = React.useRef();
+  const [playVideo, setPlayVideo] = useState(false);
+  const vidRef = useRef();
 
   return (
     <div className="app__video">
       <video
         ref={vidRef}
-        src={meal}
+        src="/meal.mp4"
         type="video/mp4"
         loop
         controls={false}
         muted
+        preload="none"
+        playsInline
       />
       <div className="app__video-overlay flex__center">
         <div

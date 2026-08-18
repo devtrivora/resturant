@@ -45,8 +45,8 @@ const Chef = () => (
     </div>
 
     {/* Bottom corner art decorations (hero style) */}
-    <img src={leftCornerImg} alt="" className="chef-corner-decoration chef-corner-left" />
-    <img src={rightCornerImg} alt="" className="chef-corner-decoration chef-corner-right" />
+    <img src={leftCornerImg} alt="" className="chef-corner-decoration chef-corner-left" loading="lazy" />
+    <img src={rightCornerImg} alt="" className="chef-corner-decoration chef-corner-right" loading="lazy" />
 
     <div className="chef-content">
       {/* Chef portrait inside an elegant arched champagne-gold frame */}
@@ -54,7 +54,7 @@ const Chef = () => (
         <div className="chef-portrait-glow" />
         <div className="chef-portrait-frame">
           <div className="chef-portrait-image">
-            <img src={images.chef} alt="Chef Manu Chandra" />
+            <img src={images.chef} alt="Chef Manu Chandra" loading="lazy" />
           </div>
         </div>
         <div className="chef-portrait-ornament">
@@ -94,7 +94,7 @@ const Chef = () => (
         <div className="chef-sign">
           <p className="chef-sign-name">Manu Chandra</p>
           <p className="chef-sign-role">Chef &amp; Founder</p>
-          <img src={images.sign} alt="Signature of Manu Chandra" />
+          <img src={images.sign} alt="Signature of Manu Chandra" loading="lazy" />
         </div>
       </div>
     </div>

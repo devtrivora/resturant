@@ -63,8 +63,8 @@ const Laurels = () => (
     </div>
 
     {/* Bottom corner art decorations (hero style) */}
-    <img src={leftCornerImg} alt="" className="laurels-corner-decoration laurels-corner-left" />
-    <img src={rightCornerImg} alt="" className="laurels-corner-decoration laurels-corner-right" />
+    <img src={leftCornerImg} alt="" className="laurels-corner-decoration laurels-corner-left" loading="lazy" />
+    <img src={rightCornerImg} alt="" className="laurels-corner-decoration laurels-corner-right" loading="lazy" />
 
     <div className="laurels-content">
       {/* Section eyebrow */}

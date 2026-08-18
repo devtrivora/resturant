@@ -1,6 +1,6 @@
-# 🍽️ Resturant
+# 🍽️ Beresta
 
-A modern, responsive, and beautifully designed web application for a restaurant. Built with React, this application showcases the restaurant's menu, chef details, gallery, and more.
+A modern, responsive, and beautifully designed web application for Beresta, an authentic Bengali restaurant. Built with React, this application showcases the restaurant's menu, chef details, gallery, and more.
 
 ## 🚀 Features
 

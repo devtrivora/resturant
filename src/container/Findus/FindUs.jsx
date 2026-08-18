@@ -69,20 +69,21 @@ const FindUs = () => (
         {/* Contact info cards */}
         <div className="contact-info">
           <ContactCard icon={<FiMapPin />} title="Our Address">
-            <p>123 Dummy Street, Dummy City</p>
+            <p>2/3 East Rampura, DIT Road, Dhaka 1219, Bangladesh</p>
+            <p className="contact-region">Dhaka Division</p>
           </ContactCard>
 
           <ContactCard icon={<FiClock />} title="Opening Hours">
-            <p>Mon - Fri: 10:00 am - 02:00 am</p>
-            <p>Sat - Sun: 10:00 am - 03:00 am</p>
+            <p>Mon - Fri: 11:00 am - 11:00 pm</p>
+            <p>Sat - Sun: 11:00 am - 12:00 am</p>
           </ContactCard>
 
           <ContactCard icon={<FiPhone />} title="Call Us">
-            <p>+91 98765 43210</p>
+            <p>+880 1841-831360</p>
           </ContactCard>
 
           <ContactCard icon={<FiMail />} title="Email Us">
-            <p>hello@beresta.com</p>
+            <p>berestadhaka@gmail.com</p>
           </ContactCard>
         </div>
 

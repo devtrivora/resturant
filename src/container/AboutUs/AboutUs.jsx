@@ -44,8 +44,8 @@ const AboutUs = () => (
     </div>
 
     {/* Bottom corner art decorations (right.png mirrored for the left corner) */}
-    <img src={rightCornerImg} alt="" className="about-corner-decoration about-corner-left" />
-    <img src={rightCornerImg} alt="" className="about-corner-decoration about-corner-right" />
+    <img src={rightCornerImg} alt="" className="about-corner-decoration about-corner-left" loading="lazy" />
+    <img src={rightCornerImg} alt="" className="about-corner-decoration about-corner-right" loading="lazy" />
 
     <div className="about-content">
       {/* Section eyebrow */}

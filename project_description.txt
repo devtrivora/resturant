@@ -1,6 +1,6 @@
-Resturant - Project Description
+Beresta - Project Description
 
-A responsive web application built using React.js and CSS3. Serving as a digital storefront, it showcases the restaurant's menu, chef details, and image gallery.
+A responsive web application built using React.js and CSS3. Serving as a digital storefront for Beresta, an authentic Bengali restaurant, it showcases the restaurant's menu, chef details, and image gallery.
 
 My Role:
 Front-End Developer

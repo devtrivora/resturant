@@ -8,13 +8,8 @@
   align-items: center;
 }
 
-.app__bg {
-  background: url('./assets/bg.png');
-  background-position: center;
-  background-size: cover;
-  background-repeat: repeat;
-  background-attachment: fixed;
-}
+/* .app__bg removed — class was unused in all JSX components.
+   bg.png is available as a static asset at /images/bg.png if needed. */
 
 .app__wrapper {
   display: flex;

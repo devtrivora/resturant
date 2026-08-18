@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&family=Noto+Serif+Bengali:wght@400;500;600;700&display=swap');
+/* Google Fonts loaded asynchronously via <link> tags in public/index.html */
 
 :root {
   --font-base: 'Cormorant Upright', serif;
@@ -18,6 +18,15 @@
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
+}
+
+html,
+body {
+  background-color: #050505;
+  /* Match the warm amber radial glow used by every section */
+  background-image:
+    radial-gradient(circle at 50% 50%, rgba(255, 157, 46, 0.14) 0%, rgba(201, 106, 16, 0.05) 45%, rgba(5, 5, 5, 0) 70%);
+  background-attachment: fixed;
 }
 
 a {

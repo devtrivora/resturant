@@ -95,6 +95,11 @@
 
 .footer__copyright {
     margin-top: 3rem;
+    padding-bottom: 2rem;
+    border-top: 1px solid rgba(255, 157, 46, 0.12);
+    padding-top: 1.5rem;
+    width: 100%;
+    text-align: center;
 }
 
 @media screen and (min-width: 2000px) {

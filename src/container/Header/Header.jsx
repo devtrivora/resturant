@@ -28,28 +28,34 @@ const Header = () => {
   const animationThreshold = 0.15;
   const p = Math.min(scrollProgress / animationThreshold, 1);
 
-  const canvasWidth = 55 + (45 * p);
+  // At p=0 (start): canvas is 55% wide, 50% tall, centred at top:54%
+  // At p=1 (full):  canvas is 100% wide, 100% tall, centred at top:50%
+  const canvasWidth  = 55 + (45 * p);
   const canvasHeight = 50 + (50 * p);
-  
-  const textOpacity = 1 - p;
+  const canvasTop    = 54 - (4 * p);   // 54% → 50% so it stays truly centred
+
+  const textOpacity    = 1 - p;
   const textTranslateY = p * -20;
 
-  const maskSolid = 40 + (60 * p);
+  // Mask fades from a soft vignette to fully transparent at p=1
+  // (no mask when the canvas fills the entire viewport)
+  const maskSolid       = 40 + (60 * p);
   const maskTransparent = 70 + (30 * p);
-  const maskImage = `radial-gradient(ellipse, rgba(0,0,0,1) ${maskSolid}%, rgba(0,0,0,0) ${maskTransparent}%)`;
+  const maskImage = p >= 1
+    ? 'none'
+    : `radial-gradient(ellipse, rgba(0,0,0,1) ${maskSolid}%, rgba(0,0,0,0) ${maskTransparent}%)`;
 
   const canvasStyle = {
-    position: 'absolute',
-    left: '50%',
-    top: '54%',
-    transform: 'translate(-50%, -50%)',
-    width: `${canvasWidth}%`,
-    height: `${canvasHeight}%`,
-    objectFit: 'cover',
-    display: 'block',
-    zIndex: 2,
-    maskImage: maskImage,
-    WebkitMaskImage: maskImage,
+    position:   'absolute',
+    left:       '50%',
+    top:        `${canvasTop}%`,
+    transform:  'translate(-50%, -50%)',
+    width:      `${canvasWidth}%`,
+    height:     `${canvasHeight}%`,
+    display:    'block',
+    zIndex:     2,
+    maskImage:        maskImage,
+    WebkitMaskImage:  maskImage,
   };
 
   const textStyleTop = {
